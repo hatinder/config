@@ -32,7 +32,8 @@ alias bd='cd "$OLDPWD"'
 
 # Alias's for multiple directory listing commands
 alias la='ls -Alh' # show hidden files
-alias ls='ls -aFh --color=always' # add colors and file type extensions
+#alias ls='ls -aFh --color=always' # commented as does not work on osx
+alias ls='ls -aFh -G' # add colors and file type extensions
 alias lx='ls -lXBh' # sort by extension
 alias lk='ls -lSrh' # sort by size
 alias lc='ls -lcrh' # sort by change time
@@ -85,7 +86,7 @@ alias tree='tree -CAhF --dirsfirst'
 alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
 alias ducks='du -skh *| sort -hr | head -10'
-alias df='df -kTh'
+alias df='df -kh'
 
 
 # Alias's for archives
